@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="41.745282">
+<testcase classname="To verify Adactin Application" name="To verify Login Page functionality" time="14.470679">
+<system-out><![CDATA[Given User is on the Adactin login page.....................................passed
+When User should enter the "prahathees", "12345abcd" and click the login button.passed
+And User should enter the "Sydney", "2 - Two","20/09/2021","21/09/2021", "1 - One" and click serach button in Search hotel page.passed
+And User should select the hotel from Select Hotel page.....................passed
+And User should enter the necessary details in the Book A Hotel page........passed
+Then The order id should be generated.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify Adactin Application" name="To verify Page functionality" time="12.486742">
+<system-out><![CDATA[Given User is on the Adactin login page.....................................passed
+When User should enter the "prahathees", "12345abcd" and click the login button.passed
+And User should enter the "Sydney", "2 - Two","20/09/2021","21/09/2021", "1 - One" and click serach button in Search hotel page.passed
+And User should select the hotel from Select Hotel page.....................passed
+And User should enter the necessary details in the Book A Hotel page........passed
+Then The order id should be generated.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To verify Adactin Application" name="To verify order id is printed" time="14.787861">
+<system-out><![CDATA[Given User is on the Adactin login page.....................................passed
+When User should enter the "prahathees", "12345abcd" and click the login button.passed
+And User should enter the "Sydney", "2 - Two","20/09/2021","21/09/2021", "1 - One" and click serach button in Search hotel page.passed
+And User should select the hotel from Select Hotel page.....................passed
+And User should enter the necessary details in the Book A Hotel page........passed
+Then The order id should be generated.......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

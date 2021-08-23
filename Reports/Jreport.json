@@ -1,0 +1,373 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 14,
+        "name": "To verify Login Page functionality",
+        "description": "",
+        "id": "to-verify-adactin-application;to-verify-login-page-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4279644500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the Adactin login page",
+            "match": {
+              "location": "LoginPageStep.a()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 798033100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should enter the \"prahathees\", \"12345abcd\" and click the login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"prahathees\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"12345abcd\"",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginPageStep.b(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 992297000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should enter the \"Sydney\", \"2 - Two\",\"20/09/2021\",\"21/09/2021\", \"1 - One\" and click serach button in Search hotel page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"20/09/2021\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"21/09/2021\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 69
+                }
+              ],
+              "location": "LoginPageStep.c(String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 495304500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should select the hotel from Select Hotel page",
+            "match": {
+              "location": "LoginPageStep.d()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 824155700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should enter the necessary details in the Book A Hotel page",
+            "match": {
+              "location": "LoginPageStep.e()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6243658800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The order id should be generated",
+            "match": {
+              "location": "LoginPageStep.f()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
+          },
+          {
+            "name": "@tag4"
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "To verify Page functionality",
+        "description": "",
+        "id": "to-verify-adactin-application;to-verify-page-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2975544400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User is on the Adactin login page",
+            "match": {
+              "location": "LoginPageStep.a()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 916670200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should enter the \"prahathees\", \"12345abcd\" and click the login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"prahathees\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"12345abcd\"",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginPageStep.b(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1088635100,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User should enter the \"Sydney\", \"2 - Two\",\"20/09/2021\",\"21/09/2021\", \"1 - One\" and click serach button in Search hotel page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"20/09/2021\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"21/09/2021\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 69
+                }
+              ],
+              "location": "LoginPageStep.c(String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 486960900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User should select the hotel from Select Hotel page",
+            "match": {
+              "location": "LoginPageStep.d()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 875370500,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User should enter the necessary details in the Book A Hotel page",
+            "match": {
+              "location": "LoginPageStep.e()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6321527200,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "The order id should be generated",
+            "match": {
+              "location": "LoginPageStep.f()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 53,
+        "name": "To verify order id is printed",
+        "description": "",
+        "id": "to-verify-adactin-application;to-verify-order-id-is-printed;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3082575200,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User is on the Adactin login page",
+            "match": {
+              "location": "LoginPageStep.a()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 743652300,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User should enter the \"prahathees\", \"12345abcd\" and click the login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"prahathees\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"12345abcd\"",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginPageStep.b(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 930145500,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User should enter the \"Sydney\", \"2 - Two\",\"20/09/2021\",\"21/09/2021\", \"1 - One\" and click serach button in Search hotel page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"2 - Two\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"20/09/2021\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"21/09/2021\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"1 - One\"",
+                  "offset": 69
+                }
+              ],
+              "location": "LoginPageStep.c(String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 491375700,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User should select the hotel from Select Hotel page",
+            "match": {
+              "location": "LoginPageStep.d()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 809240700,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User should enter the necessary details in the Book A Hotel page",
+            "match": {
+              "location": "LoginPageStep.e()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6364119600,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "The order id should be generated",
+            "match": {
+              "location": "LoginPageStep.f()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag3"
+          }
+        ]
+      }
+    ],
+    "name": "To verify Adactin Application",
+    "description": "",
+    "id": "to-verify-adactin-application",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/LoginPage.feature",
+    "tags": []
+  }
+]

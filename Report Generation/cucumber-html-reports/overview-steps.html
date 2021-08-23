@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Adactin</td>
+      <td>22 Aug 2021, 23:02</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">AdactinStep.a()</td>
+              <td>12</td>
+              <td class="duration" data-value="143725">0.000</td>
+              <td class="duration" data-value="143725">0.000</td>
+              <td class="duration" data-value="1724700">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">AdactinStep.b(DataTable)</td>
+              <td>12</td>
+              <td class="duration" data-value="798596758">0.798</td>
+              <td class="duration" data-value="798596758">0.885</td>
+              <td class="duration" data-value="9583161100">9.583</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">AdactinStep.c(String,String,String,String,String)</td>
+              <td>12</td>
+              <td class="duration" data-value="1153174141">1.153</td>
+              <td class="duration" data-value="1153174141">1.227</td>
+              <td class="duration" data-value="13838089700">13.838</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">AdactinStep.d()</td>
+              <td>12</td>
+              <td class="duration" data-value="516077891">0.516</td>
+              <td class="duration" data-value="516077891">0.552</td>
+              <td class="duration" data-value="6192934700">6.192</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">AdactinStep.e(DataTable)</td>
+              <td>12</td>
+              <td class="duration" data-value="939371875">0.939</td>
+              <td class="duration" data-value="939371875">1.042</td>
+              <td class="duration" data-value="11272462500">11.272</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">AdactinStep.f()</td>
+              <td>12</td>
+              <td class="duration" data-value="5401059825">5.401</td>
+              <td class="duration" data-value="5401059825">6.153</td>
+              <td class="duration" data-value="64812717900">1:4.812</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HooksClass.afterScenerio(Scenario)</td>
+              <td>12</td>
+              <td class="duration" data-value="729451308">0.729</td>
+              <td class="duration" data-value="729451308">0.942</td>
+              <td class="duration" data-value="8753415700">8.753</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HooksClass.beforeSceario()</td>
+              <td>12</td>
+              <td class="duration" data-value="3316560633">3.316</td>
+              <td class="duration" data-value="3316560633">5.215</td>
+              <td class="duration" data-value="39798727600">39.798</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>8</td>
+            <td>96</td>
+            <td class="duration">1.606</td>
+            <td class="duration">1:4.812</td>
+            <td class="duration">2:34.253</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
